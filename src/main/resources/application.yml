@@ -1,5 +1,6 @@
 missyou:
   api-package: com.lin.missyou.api
+  year-codes: A,B,C,D,E,F,G
 
 spring:
   profiles:
@@ -10,7 +11,7 @@ spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
     serialization:
-      WRITE_DATES_AS_TIMESTAMPS: true
+      WRITE_DATES_AS_TIMESTAMPS: true  # 将时间以时间戳的形式返回给前端
 
 wx:
   appid:

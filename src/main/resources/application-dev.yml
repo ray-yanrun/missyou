@@ -12,8 +12,19 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+  redis:
+    localhost: localhost
+    port: 6379
+    database: 7
+    password:
+    listen-pattern: __keyevent@7__:expired
 
 missyou:
   security:
     jwt-key: yanrundev
     token-expired-in: 86400000
+  order:
+    maxSkuLimit: 99
+    payTimeLimit: 1800
+    pay-callback-host: http://talelin.com
+    pay-callback-path: /v1/payment/wx/notify
